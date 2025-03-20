@@ -1,0 +1,35 @@
+GET http://localhost:3000/api.php
+
+###
+
+GET http://localhost:3000/api.php?id=1
+
+###
+
+POST http://localhost:3000/api.php
+Content-Type: application/json
+
+{
+  "reference": "Chemise verte",
+  "description": "je suis une chemise verte",
+  "priceTaxIncl": "15",
+  "priceTaxExcl": "12",
+  "quantity": 99,
+  "idLang": 1
+}
+
+###
+PUT http://localhost:3000/api.php?id=1
+Content-Type: application/json
+
+{
+  "reference": "Chemise noir",
+  "description": "je suis une chemise verte",
+  "priceTaxIncl": "15",
+  "priceTaxExcl": "12",
+  "quantity": 99,
+  "idLang": 1
+}
+###
+DELETE http://localhost:3000/api.php?id=3
+
